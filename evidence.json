@@ -1,0 +1,18 @@
+{
+  "project": "07-consent-gate",
+  "node": "v26.13.0",
+  "ok": true,
+  "durationMs": 349,
+  "checks": [
+    {
+      "name": "unit-tests",
+      "ok": true,
+      "detail": "21 passed, 0 failed"
+    },
+    {
+      "name": "cli-smoke",
+      "ok": true,
+      "detail": "demo consent flow refused a minor self-approval and granted a guardian scope"
+    }
+  ]
+}

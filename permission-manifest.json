@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "project": "07-consent-gate",
+  "runtime": { "kind": "node", "minVersion": "22", "dependencies": 0 },
+  "network": { "required": false, "hosts": [] },
+  "secrets": [],
+  "environment": [],
+  "filesystem": [],
+  "processes": { "spawns": [], "reason": "pure in-memory library" },
+  "github": {
+    "workflowPermissions": { "contents": "read" },
+    "reason": "CI only reads the repository; no writes, no secrets, no packages"
+  },
+  "humanApprovalRequiredFor": [
+    "connecting a real guardian-verification service",
+    "persisting consent records",
+    "changing the guardian rule or any expiry constant in src/index.mjs"
+  ]
+}

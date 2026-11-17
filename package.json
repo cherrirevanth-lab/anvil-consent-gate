@@ -1,0 +1,15 @@
+{
+  "name": "@anvil/consent-gate",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Scoped consent for learner data with a hard guardian requirement for minors and default deny.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/",
+    "start": "node src/cli.mjs",
+    "verify": "node verify.mjs"
+  },
+  "keywords": ["consent", "guardian", "permissions", "privacy", "node-test"],
+  "license": "MIT"
+}
